@@ -1,0 +1,14 @@
+version: "1"
+rules:
+  - base: master
+    upstream: flutter:master
+    mergeMethod: hardreset
+  - base: dev
+    upstream: flutter:dev
+    mergeMethod: hardreset
+  - base: beta
+    upstream: flutter:beta
+    mergeMethod: hardreset
+  - base: stable
+    upstream: flutter:stable
+    mergeMethod: hardreset
